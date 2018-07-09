@@ -110,7 +110,7 @@ public class RegisterFragment extends Fragment{
     private void uploadText(String nameString,String userString,String passwordString) {
         MyConstant myConstant=new MyConstant();
 
-        imageString=myConstant.getUrlImage()+imageString;
+        imageString=myConstant.getUrladdUser()+imageString;
         try {
             UploadDataToServer uploadDataToServer=new UploadDataToServer(getActivity());
             uploadDataToServer.execute(nameString,userString,passwordString,imageString);
